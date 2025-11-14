@@ -1,0 +1,10 @@
+{
+  "extends": "../../compartido/tsconfigBase.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+    
+  },
+  "include": ["src"],
+  "exclude": ["dist", "node_modules"]
+}
