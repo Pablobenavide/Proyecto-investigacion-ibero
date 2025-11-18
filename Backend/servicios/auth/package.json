@@ -1,0 +1,33 @@
+{
+ "name": "servicio-auth",
+ "version": "1.0.0",
+ "main": "dist/servidor.js",
+ "type": "commonjs",
+ "scripts": {
+  "dev": "ts-node-dev --respawn --pretty --transpile-only src/servidor.ts",
+  "build": "tsc",
+  "start": "node dist/servidor.js",
+  "prisma:generate": "npx prisma generate",
+  "prisma:migrate": "npx prisma migrate dev --name init",
+  "prisma:studio": "npx prisma studio"
+ },
+ "include": [
+  "src"
+ ],
+ "devDependencies": {
+  "@types/bcryptjs": "^2.4.6",
+  "@types/cors": "^2.8.19",
+  "@types/express": "^5.0.5",
+  "@types/jsonwebtoken": "^9.0.10",
+  "@types/node": "^24.10.0",
+  "prisma": "^6.19.0",
+  "ts-node-dev": "^2.0.0",
+  "typescript": "^5.9.3"
+ },
+ "dependencies": {
+  "@prisma/client": "^6.19.0",
+  "bcryptjs": "^3.0.3",
+  "jsonwebtoken": "^9.0.2",
+  "pino-pretty": "^13.1.2"
+ }
+}

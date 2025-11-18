@@ -1,0 +1,7 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./servicios/catalogo" },
+    { "path": "./servicios/auth" }
+  ]
+}
